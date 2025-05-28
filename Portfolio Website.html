@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SV</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="hero-content">
+            <h1 class="neon-text">Hey, I’m SV! 👾</h1>
+            <p class="tagline">A Tech Unicorn from IIITDM Kurnool, chasing shiny new skills & building epic stuff!</p>
+            <a href="#projects" class="cta-btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title neon-text">My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image placeholder-img"></div>
+                <h3>Project 1</h3>
+                <p>Add your project description here. Built with [Tech Stack].</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image placeholder-img"></div>
+                <h3>Project 2</h3>
+                <p>Add your project description here. Built with [Tech Stack].</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image placeholder-img"></div>
+                <h3>Project 3</h3>
+                <p>Add your project description here. Built with [Tech Stack].</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title neon-text">About Me</h2>
+        <div class="about-content">
+            <p>Yo Guyss, I’m SV a 3rd-year CSE student at IIITDM Kurnool, fueled by shiny object syndrome! I've dove into new skills like graphic design, video editing, and social media marketing, while mastering coding in C/C++, Python, and Java. I’m a web dev crafting projects with HTML, CSS, JS, Node.js, and SQL.</p>
+            <p>I’m a planner at heart—schedules, timetables, you name it (even if they don’t always work out). 🗓️ I’ve interned at Sarvagna Nirakar and Collegetips.in, and I’m an active Google Developer Group member. Right now, I’m chasing my startup dreams and geeking out over AI agents & automation.</p>
+            <p>When I’m not coding, you’ll find me smashing it on the badminton court or battling it out at carrom. 🏸🎲 Ready to build something epic? Let’s connect!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title neon-text">Get in Touch</h2>
+        <div class="contact-buttons">
+            <a href="https://www.linkedin.com/in/sai-videsh-ssv" class="contact-btn linkedin" style="font-size: 25px;"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/Sai-Videsh" class="contact-btn github" style="font-size: 25px;"><i class="fab fa-github"></i></a>
+            <a href="mailto:saividesh29@gmail.com" class="contact-btn email" style="font-size: 25px;"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="contact-btn whatsapp" style="font-size: 25px;"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="contact-btn Instagram" style="font-size: 25px; background-color:chocolate;"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="Resume_TechProfile.pdf" download class="resume-btn" id="resume-btn">Download My Resume</a>
+        <div id="resume-popup" class="popup hidden">
+            <p>You’re gonna see my biography. Keep your heart strong… 😎</p>
+            <audio id="popup-audio" src="pop-94319.mp3"></audio>
+            <!-- <button class="popup-close" id="popup-close">Close</button> -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
