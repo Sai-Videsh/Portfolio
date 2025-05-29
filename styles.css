@@ -3,19 +3,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
+    
+   
+        background: #0a0a0a;
+     background-image:
+    /* linear-gradient(to bottom, rgba(23, 1, 1, 0.13), rgba(0, 0, 0, 0.9)), */
+     url('my_pic__-removebg-preview\ \(1\).png'); /* Path to your image */
+  background-size: 39%;       
+  background-position: top center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image tiling */
     font-family: 'Roboto', sans-serif;
-    background: #0a0a0a;
     color: #fff;
     transition: background 0.3s, color 0.3s;
 }
 
 body.light-mode {
     background: #f0f0f0;
+     background-image:
+     /* linear-gradient(rgba(255, 255, 255, 0.16), rgba(240, 240, 240, 0.9)), */
+     url('my_pic__-removebg-preview\ \(1\).png'); /* Path to your image */
+  background-size: 39%;       
+  background-position: top center;  /* Centers the image */
+  background-repeat: no-repeat;
     color: #0a0a0a;
 }
+
 
 /* Neon Text Effect */
 .neon-text {
@@ -30,16 +46,32 @@ body.light-mode {
 }
 
 /* Navbar */
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.8);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+  background: transparent; /* initial state */
 }
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.316);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional: for nice shadow */
+  backdrop-filter: blur(10px); /* Optional: adds blur to background */
+}
+
+body.light-mode .navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px); /* Optional: adds blur to background */
+}
+
+
 
 .logo {
     font-family: 'Orbitron', sans-serif;
@@ -59,9 +91,17 @@ body.light-mode {
     font-size: 1.1rem;
     transition: color 0.3s;
 }
+.light-mode .nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
 
 .nav-link:hover {
     color: #00F0FF;
+    font-size: 1.2rem;
 }
 
 .theme-toggle-btn {
@@ -92,7 +132,7 @@ body.light-mode {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
+    /* background: linear-gradient(45deg, #0a0a0a, #1a1a1a); */
 }
 
 .hero-content {
@@ -103,7 +143,22 @@ body.light-mode {
     font-size: 1.2rem;
     margin: 1rem 0;
     color: #39FF14;
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
+.light-mode .tagline {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #ebff14;
+ text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    }
 
 .cta-btn {
     display: inline-block;
